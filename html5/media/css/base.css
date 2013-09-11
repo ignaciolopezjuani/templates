@@ -1,0 +1,132 @@
+/*
+	Name: Base Stylesheet
+	Description: 
+	Author: 
+	Author URI: 
+*/
+
+/* Imports */
+@import url("html5-reset.css");
+@import url(http://fonts.googleapis.com/css?family=Belgrano);
+
+/* Global ************************************************/
+body {
+  font-family: Calibri, "Lucida Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5em;
+}
+
+/* headings */
+h1, h2, h3 {
+  margin-bottom: 24px;
+  font-weight: bold;
+  clear: both;
+  color: #FF3366;
+  font-family: 'Belgrano', serif;
+}
+h1 {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+h2 {
+  font-size: 1.375em;
+  line-height: 1.0909em;
+}
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+
+/* paragraphs */
+p {
+  margin-bottom: 24px;
+}
+p+p {
+  text-indent: 1em;
+  margin-top: -24px;
+}
+body > p:first-of-type {
+  font-size: 1.125em;
+  line-height: 1.333em;
+}
+p strong {
+	color: #666;
+}
+* p:last-child {margin-bottom: 0;}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+::-moz-selection {background: #F6CF74; color: #fff;}
+::selection {background: #F6CF74; color: #fff;}
+
+/* lists */
+ul, ol {
+  margin-bottom: 24px;
+}
+ul {
+  list-style: square outside;
+}
+ul ul,
+ol ol {
+  margin: 0 0 0 60px;
+}
+
+/* quotes */
+blockquote {
+  margin: 0 60px 0 45px;
+  border-left: 5px solid #ccc;
+  padding-left: 10px;
+  text-indent: -0.4em;
+}
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+blockquote b {
+  display: block;
+  text-indent: 0;
+}
+cite {}
+q {}
+
+/* links */
+a {
+  color: #09f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #666666;
+}
+a:active,
+a:focus {
+  position: relative;
+  top: 1px;
+}
+
+/* tables */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold}
+td {font-weight: normal}
+
+/* Section Specific ************************************************/
+
+/* Home */
+body.home {
+	
+}
+
+/* About */
+body.about {
+	
+}
+
+/* Contact */
+body.contact {
+	
+}
