@@ -111,6 +111,88 @@
 		</video>
 	</section>
 
+	<section>
+		<header>
+			<h1>New Tags</h1>
+		</header>
+
+		<article>
+			<h2>Progress</h2>
+			<p>Represents the completion progress of a task. Progress may be either indeterminate — meaning it is unclear how much work remains before the task is complete (e.g., the task is waiting for a response from a remote host) — or a numeric value between 0 and a given maximum, explicitly specifying the fraction of work that has so far been completed.</p>
+
+			<p>Progress: <progress> <span id="p">0</span>% </progress> </p>
+
+			<script>
+			var progressBar = document.getElementById('p');
+			function updateProgress(newValue) {
+				progressBar.textContent = newValue;
+			}
+			</script>
+
+		</article>
+
+		<article>
+			<h2>Meter</h2>
+			<p> a scalar measurement within a known range</p>
+			<p>Your score is:  <meter>2 out of 10</meter></p>
+			<p>We can give this further meaning by adding min and max attributes</p>
+
+			<p>Your score is: <meter min="0" max="10">2 out of 10</meter></p>
+			<p>Your score is: <meter value="91" min="0" max="100" low="40" high="90" optimum="100">A+</meter></p>
+
+			
+		</article>
+
+		<article>
+			<h2>Time</h2>
+			<p>The time element represents either a time on a 24 hour clock, or a precise date in the proleptic Gregorian calendar, optionally with a time and a time-zone offset.</p> 
+			<time>2009-11-13</time>
+			<!-- without @datetime content must be a valid date, time, or precise datetime -->
+			<time datetime="2009-11-13">13<sup>th</sup> November</time>
+			<!-- when using @datetime the content can be anything relevant -->
+			<time datetime="20:00">starting at 8pm</time>
+			<!-- time example -->
+			<time datetime="2009-11-13T20:00+00:00">8pm on my birthday</time>
+			<!-- datetime with time-zone example -->
+			<time datetime="2009-11-13T20:00Z">8pm on my birthday</time>
+			<!-- datetime with time-zone “Z” -->
+		</article>
+
+		<article>
+			<h2>Details</h2>
+			<p>The details element represents a disclosure widget from which the user can obtain additional information or controls.</p>
+			<details>
+				<summary>Show/Hide me</summary>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			</details>
+
+		</article>
+
+		<article>
+			<h2>Command</h2>
+			<p>The command element represents a command that the user can invoke. A command can be part of a context menu or toolbar, using the menu element, or can be put anywhere else in the page, to define a keyboard shortcut.</p>
+
+			<menu type="toolbar"><command type="radio" radiogroup="alignment" checked="checked" label="Left" icon="left.png" onclick="setAlign('left')" />
+			</menu>
+		</article>
+
+		<article>
+			<h2>Menu</h2>
+			<p>The menu element represents a list of commands.</p>
+
+			<p>If a menu element's type attribute is in the context menu state, then the element represents the commands of a context menu, and the user can only interact with the commands if that context menu is activated. If a menu element's type attribute is in the toolbar state, then the element represents a list of active commands that the user can immediately interact with.</p>
+
+			<p>If a menu element's type attribute is in the list state, then the element either represents an unordered list of items (each represented by an li element), each of which represents a command that the user can perform or activate, or, if the element has no li element children, flow content describing available commands.</p>
+
+			<menu type="toolbar">
+
+				<command type="command" disabled label="Save" icon="icons/save.png" onclick="save()">
+					<command type="command" disabled label="Publish" icon="icons/pub.png" onclick="publish()">
+			</menu>
+		</article>
+		        
+	</section>
+
 	<!-- Ventana a otros sitios -->
 	<!--<iframe src="http://monthlys.com" style="width:100%; height: 500px;"></iframe>-->
 	
